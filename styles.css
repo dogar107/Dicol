@@ -53,12 +53,15 @@ font-size: 15px;
 
 
 #btn{
- float: right;
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center; 
-gap:18px; 
+float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    position: relative;
+    gap: 31px;
+    justify-content: flex-end;
 }
 
 .box{
@@ -421,6 +424,7 @@ position: relative;
 }
 #boards {
     top: 0px;
+    bottom: 0px;
     height: 565px;
     background-color: antiquewhite;
     width: 491px;
@@ -429,7 +433,7 @@ position: relative;
     border-width: 5px 10px 5px;
     justify-content: space-around;
     align-items: center;
-
+    position: absolute;
 }
 .board {
     display: flex;
@@ -450,13 +454,14 @@ position: relative;
 }
 
 .logout{
-  color: white;
+color: white;
     position: relative;
-    left: 76%;
+    left: 0px;
     background: none;
     border: none;
-    top: 7px;
-    cursor:pointer;
+    top: 0px;
+    cursor: pointer;
+    float: right;
 }
 
 .totalscore{
@@ -488,4 +493,9 @@ background-color: red;
     width:100%;
     left: 0px;
 
+}
+.container{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  gap: 1em;
 }

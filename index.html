@@ -9,24 +9,26 @@
 </head>
 <body>
 
+  <div class="container">
+
   <div class="me">
     <h1 class="heading" id="heading">🎲 Dice Game</h1>
-    <button class="logout" id="quit">
-      <span class="material-symbols-outlined">logout</span>
-    </button>
     </div>
   
 
   
   <div id="btn">
+     <button class="logout" id="quit">
+      <span class="material-symbols-outlined">logout</span>
+    </button>
     <button class="btn1" id="rollbtn">Roll Dice</button>
     <button class="btn2" id="reset">Reset</button>
 
     <div class="totalscore" id="totalscore">
-      <h1 class="total" id="total">Total Score:</h1>
-      <h2 id="score" class="score">0</h2>
-      <h3 class="level" style="color: whitesmoke;" id="level">Level:</h3>
-      <h4 id="levelscore" class="levelscore" style="color: whitesmoke;"></h4>
+      <h1 class="total" id="total">Total Score:
+      <span id="score" class="score">0</span></h1>
+      <h3 class="level" style="color: whitesmoke;" id="level">Level:
+      <span id="levelscore" class="levelscore" style="color: whitesmoke;"></span>
     </div>
 
     <p class="p2" id="p2">🔴 Red shows you are in danger</p>
@@ -103,6 +105,7 @@
   <div class="footer">
     <p>@2025 Dice Game All Right Reserved</p>
     </div>
+  </div>
 
   <script src="index.js"></script>
 </body>
