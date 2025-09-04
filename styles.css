@@ -159,16 +159,6 @@ float: right;
 
 
 
-.boards{
-justify-content: space-between;
-align-self: flex-end;
-display: flex;
-flex-direction: column;
-gap: 213px;
-position: relative;
-align-items: center;
-top: -99px;
-}
 
 html{
 height:100%;
@@ -200,11 +190,7 @@ left: 25px;
 
 }
 
-.me{
-display: flex;
-position: relative;
 
-}
 
 #snackbar {
   visibility: hidden; 
@@ -423,9 +409,7 @@ position: relative;
     top: 25px;
 }
 #boards {
-    top: 0px;
-    bottom: 0px;
-    height: 565px;
+        height: 565px;
     background-color: antiquewhite;
     width: 491px;
     border-style: solid;
@@ -433,14 +417,9 @@ position: relative;
     border-width: 5px 10px 5px;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-}
-.board {
-    display: flex;
-    top: -1px;
     position: relative;
-    gap: 7px;
 }
+
 
 .box-list {
   display: grid;
@@ -488,7 +467,7 @@ background-color: red;
     height: 16px;
     justify-content: center;
     display: flex;
-    position: absolute;
+    position: fixed;
     bottom:0px;
     width:100%;
     left: 0px;
